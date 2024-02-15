@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "enditions",
+  "version": "${version}",
+  "name": "Enditions",
+  "description": "This mod adds new End biomes (Continuation of Netherenditons)",
+  "authors": [
+    "ErzeKawek"
+  ],
+  "contact": {
+    "repo": "https://github.com/ErzeKawek/enditions"
+  },
+  "license": "MIT",
+  "icon": "assets/enditions/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.erzekawek.enditions.client.EnditionsClient"
+    ],
+    "main": [
+      "net.erzekawek.enditions.Enditions"
+    ]
+  },
+  "mixins": [
+    "enditions.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
