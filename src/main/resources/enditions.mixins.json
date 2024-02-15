@@ -4,6 +4,7 @@
   "package": "net.erzekawek.enditions.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "EnditionsMixin"
   ],
   "client": [
   ],

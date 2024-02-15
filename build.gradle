@@ -140,15 +140,6 @@ tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
     it.options.release = 17
 }
-javadoc {
-    options.tags = ["reason"]
-    options.stylesheetFile = new File(projectDir, "javadoc.css");
-}
-
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    archiveClassifier = 'javadoc'
-    from javadoc.destinationDir
-}
 
 // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
 // if it is present.
@@ -162,6 +153,5 @@ jar {
 }
 artifacts {
     archives sourcesJar
-    archives javadocJar
 }
 def env = System.getenv()
