@@ -1,4 +1,4 @@
-package net.erzekawek.enditions.mixin;
+package net.erzekawek.enditions.mixin.client;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
@@ -11,6 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class EnditionsMixin {
     @Inject(at = @At("HEAD"), method = "loadWorld")
     private void init(CallbackInfo info) {
-        // This code is injected into the start of MinecraftServer.loadWorld()V
+        // This code is injected into the start of MinecraftServer.loadWorld Biji
     }
 }
