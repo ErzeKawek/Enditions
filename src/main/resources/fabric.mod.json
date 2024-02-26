@@ -23,7 +23,7 @@
       "net.erzekawek.enditions.Enditions"
     ],
       "fabric-datagen": [
-      "net.erzekawek.enditions.EnditionsDataGenerator"
+        "net.erzekawek.datagen.EnditionsDataGenerator"
     ]
   },
   "mixins": [
